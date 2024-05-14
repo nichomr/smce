@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/fixedheader/3.2.0/css/fixedHeader.bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css"
+    />
+    <title>Daftar Peserta Exchange</title>
+  </head>
+  <body">
+
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h4 class="text-center mb-4" id="packageName"></h4>          <style>
+table, th, td {
+  border:1px solid white;
+}
+</style>
+<table style="width:100%">
+<style>
+img {
+  border: 1px solid #AEB6BF;
+  border-radius: 4px;
+  padding: 5px;
+  width: 1350px;
+  height:300px;
+}
+img  {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+</style>
+</head>
+<body>
+
+<center><img src="banner.jpg" alt="Paris" style=width:"2200px" height: "100px"></center>
+
+</table>
+<head>
+<style>
+.button {
+  background-color: #1E90FF; /* Green */
+  float: right;
+  border: none;
+  color: white;
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+text-shadow: 1px 1px 1px #000;
+  display: inline-block;
+  font-size: 16px;
+border-radius: 5px;
+background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button1:hover  {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+</style>
+</head>
+<body>
+
+<a href="https://t.me/Semicho_Exchange"><button class="button button1">Chat Admin</button></a>
+<a href="https://t.me/nichomr_bot"><button class="button button2">Pendaftaran</button></a>
+          <br>
+          <br>
+          <table
+            id="example"
+            class="table table-striped table-bordered mt-2 mb-2"
+            style="width: 100%"
+          ></table>
+          <br />
+          <br />
+          <p id="passingGrade"></p>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/fixedheader/3.2.0/js/dataTables.fixedHeader.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.9/js/responsive.bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- <script type="text/javascript" src="data.json"></script> -->
+    <script type="text/javascript">
+       $(document).ready(function () {
+    $("#example").DataTable({
+      ajax: "https://script.google.com/macros/s/AKfycbwRcxcTVaYGMlG-WpYm8V1FfRL84WAB-VWaErYIfRzVZ-RfhRBNjOJenKSVUg87a__o/exec",
+      columns: [
+
+      {title: "No",data: "No",},
+
+      {
+          title: "ID",
+          data: "ID",
+        },
+      {
+          title: "Tanggal",
+          data: "Tanggal",
+        },
+
+        {
+          title: "Nama",
+          data: "Nama",
+        },
+        {
+          title: "Wallet Pi",
+          data: "Wallet Pi",
+        },
+        {
+          title: "Bank",
+          data: "Bank",
+        },
+        {
+          title: "No.Rek",
+          data:"No Rekening",
+        },
+        {
+          title: "an.Rekening",
+          data: "a/n Rekening",
+        },
+        {
+          title: "Status",
+          data: "Status",
+        },
+       
+	],
+      rowId: "No",
+      liveAjax: true,
+    });
+  });
+    </script>
+  </body>
+<div class="col-12">
+<div id="copyright">								
+<center>&copy; NichoMr - Semicho. All rights reserved. Design: <a href="http://html5up.net">HTML5 UP</a></center>
+</div>
+</html>
