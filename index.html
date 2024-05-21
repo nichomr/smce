@@ -4,34 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.datatables.net/fixedheader/3.2.0/css/fixedHeader.bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css"
-    />
-    <title>Daftar Peserta Exchange</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.2.0/css/fixedHeader.bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="nmr.css"/>
+
+    <title>Menu Exchange</title>
   </head>
+
   <body">
 
       <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <h4 class="text-center mb-4" id="packageName"></h4>          <style>
-table, th, td {
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <h4 class="text-center mb-4" id="packageName"></h4>   
+       
+<style>
+  table, th, td {
   border:1px solid white;
 }
 </style>
@@ -52,23 +42,39 @@ img  {
 <body>
 
 <center><img src="banner.jpg" alt="Paris" style=width:"2200px" height: "100px"></center>
-
+<table style="width:100%">
+<tr>
+<th><marquee direction='left'><font color="#483D8B"> Selamat Datang Di Layanan Pertukaran Coin Pi. Berikan Kami Saran - Saran Agar Kami Dapat Memperbaiki Kekurangan Kami. Terima Kasih Atas Kunjungannya.</font></marquee><th>
 </table>
-<head>
+
+<body style="background-color:#79B8FF;"> 
+
+<style type="text/css">
+    #halaman { width:1344px; margin:0 auto; }
+    #header { height:60px; padding:10px;background-color:#CCCCCC; }
+    #kanan { height:600px; padding:10px;background-color:#F0FFFF;float:right;width:325px; margin-top:10px; }
+    #kiri { height:600px; padding:10px;background-color:#F8F8FF;lefth;width:990px; margin:10px 290px 0 0px; }
+    #footer { clear:both; height:35px;padding:10px; background-color:#CCCCCC; margin-top:10px;}
+</style>
+
+<body>
+<div id="halaman">
+<div id="header">
+
 <style>
 .button {
-  background-color: #1E90FF; /* Green */
+  background-color:#4169E1; /* Green */
   float: right;
   border: none;
   color: white;
   padding: 8px 32px;
   text-align: center;
   text-decoration: none;
-text-shadow: 1px 1px 1px #000;
+  text-shadow: 1px 1px 1px #000;
   display: inline-block;
   font-size: 16px;
-border-radius: 5px;
-background-image: linear-gradient(
+  border-radius: 5px;
+  background-image: linear-gradient(
     to top left,
     rgba(0, 0, 0, 0.2),
     rgba(0, 0, 0, 0.2) 30%,
@@ -87,16 +93,20 @@ background-image: linear-gradient(
 .button2:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
+.button3: {
+  box-shadow: 0 0px 16px 0 rgba(0,0,0,0.0),0 00px 00px 0 rgba(0,0,0,0.0);
+}
+
 </style>
-</head>
+
 <style>
 .div1 {
-  width: 1350px;
+  width: 1330px;
   height: 47px;
   border: 1px solid blue;
 }
  .div1 {
-  background-color: #483D8B;
+  background-color: #566D7E;
 }
 .div1 {
   font-color: #F8F8FF;
@@ -104,12 +114,20 @@ background-image: linear-gradient(
 </style>
 
 <body>
-<div class="div1"><p style="color:white;">Time Cikupa Zone: 
+<p style="color:gray;">
+Time Cikupa Zone: 
+<font style="color:red;">
 <script type="text/javascript" src="js/time.js"></script>
 <body onload="startTime()">
 <td align="Right">
-<span id="clocktime"></span><a href="https://t.me/Semicho_Exchange"><button class="button button1">Chat Admin</button></a>
-<a href="https://t.me/nichomr_bot"><button class="button button2">Pendaftaran</button></a></p></div>
+<span id="clocktime"></span></font>
+
+<a href="https://t.me/Semicho_Exchange"><button class="button button1">Chat Admin</button></a>
+<a href="https://t.me/Semicho_Exchange"><button class="button button1">Konfirmasi TF</button></a>
+<a href="tabel.html"><button class="button button2">Tabel</button></a>
+<a href="index.html"><button class="button button2">Home</button></a></p>
+
+
 
 <script>
 function startTime()
@@ -137,76 +155,34 @@ function checkTime(i)
     return i;
 }
 </script></td></tr></p>
-          
-          <table
-            id="example"
-            class="table table-striped table-bordered mt-2 mb-2"
-            style="width: 100%"
-          ></table>
-          
-          <p id="passingGrade"></p>
-        </div>
-      </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap.min.js"></script>
-    <script src="https://cdn.datatables.net/fixedheader/3.2.0/js/dataTables.fixedHeader.min.js"></script>
-    <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
-    <script src="https://cdn.datatables.net/responsive/2.2.9/js/responsive.bootstrap.min.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <!-- <script type="text/javascript" src="data.json"></script> -->
-    <script type="text/javascript">
-       $(document).ready(function () {
-    $("#example").DataTable({
-      ajax: "https://script.google.com/macros/s/AKfycbwRcxcTVaYGMlG-WpYm8V1FfRL84WAB-VWaErYIfRzVZ-RfhRBNjOJenKSVUg87a__o/exec",
-      columns: [
+</div>
+<div id="kanan">
+<!-- START CODE Attention! Do not modify this code; --><script>var fm = "USD";var to = "IDR";var tz = "timezone";var sz = "1x1";var lg = "en";var st = "info";var lr = "0";var rd = "0";</script><a href="https://currencyrate.today/converter-widget" title="Currency Converter"><script src="//currencyrate.today/converter"></script></a><div style="font-size:.8em;"><a href="https://currencyrate.today"></a></div><!-- Attention! Do not modify this code; END CODE -->
 
-      {title: "No",data: "No",},
+<!-- ValutaFX CURRENCY CONVERTER START -->
+<div style='width:100%;*width:250px;max-width:250px;margin:0px auto;padding:0px;border:1px solid #01698c;background-color:#FFFFFF;'>
+<div style='width:100%;*width:250px;max-width:250px;text-align:center;padding:10px 0px;background-color:#01698c;font-family:arial;font-size:16px;color:#FFFFFF;font-weight:bold;vertical-align:middle;'>Konversi Mata Uang</div>
+<div style='padding:10px;'>
+<script type='text/javascript' charset='utf-8'>if(typeof vfxIdx==='undefined')vfxIdx=0;vfxIdx++;document.write("<div id='vfxWidget"+vfxIdx+"'><"+"/div>");document.write("<script async type='text/javascript' src='https://widgets.valutafx.com/ConverterWidgetLoader.aspx?sid=CC00BQ2FU&from=USD&to=IDR&idx="+vfxIdx+"' charset='utf-8'></" + "script>");</script>
+<div style='overflow: hidden;'>
+<div style='float:left; text-align: left;'><noindex><a title='Tambahkan widget gratis ini ke situs Anda!' style='font-size:12px;color:#007eaa;text-decoration: none;' href='https://id.valutafx.com/AddConverter.aspx?sid=CC00BQ2FU' target='_blank' rel='nofollow'>By:SemichoExchange</a></noindex></div>
+<div style='float:right; text-align: right;'><a style='font-size:12px;color:#777777;text-decoration: none;opacity: 0.6;filter: alpha(opacity=60);' href='https://id.valutafx.com/' target='_blank'>id.valutafx.com</a>
+</div>
+<!-- ValutaFX CURRENCY CONVERTER END -->
+</div>         
+</div>
+</div> 
+</div>
 
-      {
-          title: "ID",
-          data: "ID",
-        },
-      {
-          title: "Tanggal",
-          data: "Tanggal",
-        },
 
-        {
-          title: "Nama",
-          data: "Nama",
-        },
-        {
-          title: "Wallet Pi",
-          data: "Wallet Pi",
-        },
-        {
-          title: "Bank",
-          data: "Bank",
-        },
-        {
-          title: "No.Rek",
-          data:"No Rekening",
-        },
-        {
-          title: "an.Rekening",
-          data: "a/n Rekening",
-        },
-        {
-          title: "Status",
-          data: "Status",
-        },
-       
-	],
-      rowId: "No",
-      liveAjax: true,
-    });
-  });
-    </script>
-  </body>
+
+<div id="kiri">kiri</div>
+<div id="footer">
+
 <div class="col-12">
 <div id="copyright">								
 <center>Copyright 2024&copy; NichoMr - Semicho. All rights reserved | Design: <a href="http://html5up.net">HTML5 UP</a></center>
 </div>
+</div>
+</body>
 </html>
